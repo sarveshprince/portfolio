@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sarvesh - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+
+<body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#home">SK </a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links left-nav">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#coding-profiles" class="nav-link">Coding Profiles</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#coursework" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Sarvesh kumar A" style="color: azure; white-space: nowrap;">Sarvesh kumar A</h1>
+            <p class="typewriter">AI & Data Science Enthusiast</p>
+            <p class="hero-description" style="color: azure;">
+                3rd year Student at Sri Krishna College of Engineering and Technology, specializing in Artificial Intelligence and Data Science. Passionate about Data Structures and Algorithms with proficiency in Java, C++ and web technologies (HTML, CSS, JavaScript,Reactjs). Active problem solver with 60+ solutions on LeetCode.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/sarveshprince" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/pranesh-j-s-136495292/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:sarvesh.jr10@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <br>
+            <a href="https://drive.google.com/file/d/1IDV-1EAV8Gzlk4pMBG0oxLROlJTLhN48/view?usp=drive_link" target="_blank" class="btn">View CV</a>
+        </div>
+    </section>
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Alpha Wisdom Vidyashram Higher Secondary School</h3>
+                    <span class="timeline-date">
+                        <i class="fas fa-calendar-alt"></i> 2010 - 2023
+                    </span>
+                    <div class="grades">
+                        <div class="grade-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>CBSE 12Th: 80.06%</span>
+                        </div>
+                        <!-- <div class="grade-item">
+                            <i class="fas fa-award"></i>
+                            <span>11th: 90.83%</span>
+                        </div> -->
+                        <div class="grade-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>SSLC: Pass (COVID)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- College -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Sri Krishna College Of Engineering and Technology</h3>
+                    <span class="timeline-date">
+                        <i class="fas fa-calendar-alt"></i> 2023 - 2027
+                    </span>
+                    <p>B.Tech in Artificial Intelligence and Data Science</p>
+                    <div class="grades">
+                        <div class="grade-item">
+                            <i class="fas fa-star"></i>
+                            <span>CGPA: 8.11 (till Semester 4)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- School -->
+        </div>
+    </section>
+    
+    <section id="coding-profiles" class="coding-profiles">
+        <h2 class="section-title">Coding Profiles</h2>
+        <div class="profile-container">
+            <!-- LeetCode Card -->
+            <div class="profile-card leetcode">
+            <div class="card-header">
+                    <i class="fas fa-code" style="color: rgb(21, 26, 26);"></i>
+                    <h3 style="color:black">LeetCode</h3>
+                    <a href="https://leetcode.com/u/sarvesh__8228/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Problems Solved</span>
+                        <span class="stat-value" id="leetcode-solved">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Success Rate</span>
+                        <span class="stat-value" id="leetcode-rate">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Easy</span>
+                        <span class="stat-value" id="leetcode-easy">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Medium</span>
+                        <span class="stat-value" id="leetcode-medium">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Hard</span>
+                        <span class="stat-value" id="leetcode-hard">Loading...</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- <div class="profile-card gfg">
+                <div class="card-header">
+                    <i class="fas fa-laptop-code" style="color: rgb(77, 174, 98);"></i>
+                    <h3 style="color: black;">GeeksforGeeks</h3>
+                    <a href="https://www.geeksforgeeks.org/user/pranesh1905/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Problems Solved</span>
+                        <span class="stat-value" id="gfg-solved">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Coding Score</span>
+                        <span class="stat-value" id="gfg-score">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Last Updated</span>
+                        <span class="stat-value" id="gfg-last-updated">Never</span>
+                    </div>
+                </div>
+                <button onclick="updateGFGStatsHandler()" class="update-btn">
+                    Update Stats
+                </button>
+            </div> -->
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+<section id="skills" class="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-container">
+        <!-- Languages -->
+        <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Languages</h3>
+            <ul style="list-style-type: none">
+                <li><i class="fab fa-cuttlefish"></i> C++</li>
+                <li><i class="fab fa-java"></i> Java</li>
+                <li><i class="fab fa-html5"></i> HTML/CSS</li>
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fas fa-database"></i> SQL</li>
+            </ul>
+        </div>
+
+        <!-- Developer Tools -->
+        <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Developer Tools</h3>
+            <ul style="list-style-type: none;">
+                <li><i class="fas fa-code"></i> VS Code</li>
+                <li><i class="fas fa-database"></i> MySQL Workbench</li>
+                <li><i class="fab fa-java"></i> SpringToolSuite</li>
+                <li><i class="fab fa-java"></i> Java Spring boot</li>
+                <li><i class="fas fa-flask"></i> Postman</li>
+                <li><i class="fas fa-file-excel"></i> Excel</li>
+            </ul>
+        </div>
+        
+        <!-- Technologies/Frameworks -->
+        <div class="skill-category">
+            <h3><i class="fas fa-layer-group"></i> Technologies/Frameworks</h3>
+            <ul style="list-style-type: none">
+                <li><i class="fab fa-react"></i> React.js</li>
+                <li><i class="fab fa-linux"></i> Linux</li>
+                <li><i class="fab fa-github"></i> GitHub</li>
+                <li><i class="fab fa-aws"></i> AWS</li>
+                <li><i class="fas fa-cloud"></i> REST API</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="coursework" class="coursework">
+    <h2 class="section-title">Certification</h2>
+    <div class="certifications-grid">
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fab fa-microsoft"></i></span>
+            <div class="cert-title">Microsoft Certified: Azure Fundamentals</div>
+            <div class="cert-org">Microsoft Azure</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/1Ymn0kEy3D_HBC78PV-jnbnTbly2pLeLG/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fab fa-react"></i></span>
+            <div class="cert-title">ReactJs</div>
+            <div class="cert-org">Infosys Springboard</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/1Dex3E1UV6r9DqN0bFged32goILhO8HSs/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fab fa-java"></i></span>
+            <div class="cert-title">Java Programming and Fundamentals</div>
+            <div class="cert-org">Infosys Springboard</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/1ll7yGnv0QsF8wNdBMiHsHC3a_isWmlDM/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fas fa-robot"></i></span>
+            <div class="cert-title">Artificial Intelligence Foundation</div>
+            <div class="cert-org">Infosys Springboard</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/1do7we-jWeUmtbneR80ZzyYYw2meTHB6Y/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fas fa-project-diagram"></i></span>
+            <div class="cert-title">Academic Process Mining Fundamentals</div>
+            <div class="cert-org">Celonis</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/18A-_k6XKy77w6CfmWfQ8lc3UUVnpJXsT/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fas fa-brain"></i></span>
+            <div class="cert-title">Machine Learning Onramp</div>
+            <div class="cert-org">Mathworks</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/127FMB448p_DA5JmcUKIBY4S4NGi2e9OK/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fas fa-users"></i></span>
+            <div class="cert-title">People and Soft Skills Assessment</div>
+            <div class="cert-org">IBM</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/1Y_Qu1Mm7TvAhhMNLfLdmzslOFi_5HQB4/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fas fa-database"></i></span>
+            <div class="cert-title">Database and SQL</div>
+            <div class="cert-org">Infosys Springboard</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/1qC9ecLJ4OiecqB7TzsaIngiCUqirBKy0/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fas fa-code"></i></span>
+            <div class="cert-title">C++ Fundamentals</div>
+            <div class="cert-org">Infosys Springboard</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/1jfgE9Jt_ryfkvWDulQBNE4QeLbr7LDi5/preview">View Certificate</button>
+        </div>
+        <div class="certification-card">
+            <span class="cert-icon"><i class="fab fa-aws"></i></span>
+            <div class="cert-title">AWS Cloud Practitioner Essentials</div>
+            <div class="cert-org">AWS Skill Builder</div>
+            <button class="project-link cert-view-btn" data-cert="https://drive.google.com/file/d/1pZw_Z2yuNPcebXqAAS8dL_VEsCqEFUbP/preview">View Certificate</button>
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+        <!-- Project Card Example -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3><i class="fas fa-hospital-user"></i> SKCET MediCare Application - MediCamp</h3>
+                <div class="project-tech">
+                    <span class="tech-tag"><i class="fab fa-react"></i> React.js</span>
+                    <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                </div>
+                <ul>
+                    <li>Developed healthcare management app with multi-user roles</li>
+                    <li>Implemented appointment booking and e-prescriptions</li>
+                    <li>Added secure patient data management</li>
+                    <li>Integrated billing and ambulance tracking</li>
+                    <li>Bed availability tracking system</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Add more project-card blocks here as needed, following the same structure -->
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="achievements">
+    <h2 class="section-title">Achievements & Participations</h2>
+    <div class="achievement-category">
+        <h3 style="text-align: center; display: flex; justify-content: center; align-items: center;">
+            <i class="fas fa-trophy"></i> Hackathons
+        </h3>
+        <div class="achievements-grid">
+            <div class="achievement-card winner">
+                <div class="achievement-content">
+                    <h4><i class="fas fa-hospital"></i> SKCET MediCare - AI Integrated Smart Hospital Management System</h4>
+                    <p class="achievement-place"><i class="fas fa-university"></i> SRM University, Chennai</p>
+                    <p class="achievement-place"><i class="fas fa-bolt"></i> Hack Summit 5.0</p>
+                    <p class="achievement-details">
+                        <strong>Participation:</strong> Actively contributed to the development and implementation of the project.
+                    </p>
+                    <div class="achievement-badge">
+                        <strong>Highlights:</strong>
+                        <ul>
+                            <li>Streamlined patient care with appointment scheduling, e-prescriptions, and real-time ambulance tracking.</li>
+                            <li>Bed Availability tracking.</li>
+                            <li>Enhanced hospital efficiency with AI-driven medical recommendations and multi-location management.</li>
+                            <li>Integrated telemedicine and secure payment systems for accessible healthcare solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="achievement-tech">
+                        <strong>Technology Stack:</strong>
+                        <ul>
+                            <li><strong>Frontend:</strong> React JS, React Native</li>
+                            <li><strong>Backend:</strong> Python (v3.12.5), PHP (v8.2.12)</li>
+                            <li><strong>Database:</strong> MySQL, Apache Server</li>
+                            <li><strong>Security:</strong> Data encryption, authentication protocols</li>
+                        </ul>
+                        <br>
+                        <a href="https://drive.google.com/file/d/1kZgL5NC01diPquFnVCJt4K4qhDXWrpY8/view?usp=sharing" target="_blank" style="color: rgb(29, 172, 254); text-align: center; display: flex; justify-content: center; align-items: center;">Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="achievement-category">
+        <h3 style="text-align: center; display: flex; justify-content: center; align-items: center;">
+            <i class="fas fa-file-alt"></i> Paper Presentations
+        </h3>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <h4><i class="fas fa-lightbulb"></i> I-SYM-24</h4>
+                    <p class="achievement-place"><i class="fas fa-university"></i> Hindusthan College of Engineering and Technology</p>
+                </div>
+                <br>
+                <a href="https://drive.google.com/file/d/1SecwxsG3VkopGIpqYdchWO7evZ5xO-J5/view?usp=sharing" target="_blank" style="color: rgb(29, 172, 254);text-align: center; display: flex; justify-content: center; align-items: center;">Certificate</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Leadership Section -->
+<section id="contact" class="contact">
+    <div class="contact-bg">
+        <div class="contact-container">
+            <div class="contact-info-block" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+                <h3 class="contact-title">Sarvesh kumar A</h3>
+                <p class="contact-role">Aspiring AI & Data Science Engineer</p>
+                <div class="contact-social">
+                    <a href="https://github.com/sarveshprince" target="_blank" class="contact-social-btn"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/sarvesh__8228/" target="_blank" class="contact-social-btn"><i class="fas fa-code"></i></a>
+                    <a href="mailto:sarvesh.jr10@gmail.com" class="contact-social-btn"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-detail"><i class="fas fa-phone"></i> <a href="tel:+919003577007">9003577007</a></div>
+                    <div class="contact-detail"><i class="fas fa-envelope"></i> <a href="mailto:sarvesh.jr10@gmail.com">sarvesh.jr10@gmail.com</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sarvesh kumar A. All rights reserved.</p>
+        </div>
+    </div>
+</section>
+    <!-- Scripts -->
+    <script src="theme.js"></script>
+    <script src="nav.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="coding-stats.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="portfolio.js"></script>
+
+<script>
+   emailjs.init("YOUR_PUBLIC_KEY"); // Initialize with your EmailJS public key
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.add(`${currentTheme}-theme`);
+
+    themeToggle.checked = currentTheme === 'dark';
+
+    themeToggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-theme');
+      document.body.classList.toggle('light-theme');
+      const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+      localStorage.setItem('theme', newTheme);
+    });
+  });
+</script>
+<script>
+// Navigation active state on click
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+// Navigation active state on scroll
+window.addEventListener('scroll', () => {
+    const sections = ['home','education','coding-profiles','skills','coursework','projects','achievements','contact'];
+    let current = '';
+    const scrollY = window.pageYOffset;
+    sections.forEach(id => {
+        const section = document.getElementById(id);
+        if (section && section.offsetTop - 80 <= scrollY) {
+            current = id;
+        }
+    });
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+        }
+    });
+});
+</script>
+
+<!-- Certificate Modal -->
+<div id="cert-modal" class="cert-modal">
+    <div class="cert-modal-content">
+        <span class="cert-modal-close" id="cert-modal-close">&times;</span>
+        <iframe id="cert-frame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+// Certificate modal logic
+document.querySelectorAll('.cert-view-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const modal = document.getElementById('cert-modal');
+        const frame = document.getElementById('cert-frame');
+        frame.src = this.getAttribute('data-cert');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    });
+});
+document.getElementById('cert-modal-close').onclick = function() {
+    document.getElementById('cert-modal').style.display = 'none';
+    document.getElementById('cert-frame').src = '';
+    document.body.style.overflow = '';
+};
+window.onclick = function(event) {
+    const modal = document.getElementById('cert-modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+        document.getElementById('cert-frame').src = '';
+        document.body.style.overflow = '';
+    }
+};
+</script>
+
+</body>
+</html>
+</html>
+};
+</script>
+
+</body>
+</html>
+</html>
+    }
+};
+</script>
+
+</body>
+</html>
+</html>
+};
+</script>
+
+</body>
+</html>
+</html>
