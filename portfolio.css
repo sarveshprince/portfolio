@@ -66,18 +66,10 @@ body::before {
     radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(183, 74, 255, 0.05) 0%, transparent 50%),
     radial-gradient(circle at 40% 80%, rgba(255, 42, 127, 0.05) 0%, transparent 50%);
-  animation: backgroundShift 20s ease-in-out infinite alternate;
+  /* Remove animation to prevent background from becoming translucent */
+  /* animation: backgroundShift 20s ease-in-out infinite alternate; */
   pointer-events: none;
   z-index: -1;
-}
-
-@keyframes backgroundShift {
-  0% {
-    transform: translateX(0) translateY(0) scale(1);
-  }
-  100% {
-    transform: translateX(-10px) translateY(-10px) scale(1.05);
-  }
 }
 
 /* ===============================================
@@ -197,8 +189,10 @@ nav, .nav-container {
 
 .hero-content {
   max-width: 800px;
-  padding: 2rem;
-  animation: heroFadeIn 2s ease-out;
+  padding: 0.1rem;
+  /* animation: heroFadeIn 2s ease-out; */
+  /* Prevent scroll jump after fade-in */
+  will-change: transform;
 }
 
 @keyframes heroFadeIn {
@@ -208,14 +202,14 @@ nav, .nav-container {
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* Stay at top after animation */
   }
 }
 
 .hero h1 {
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 900;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   background: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple), var(--neon-pink));
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -237,7 +231,7 @@ nav, .nav-container {
 .typewriter {
   font-size: 1.5rem;
   color: var(--neon-purple);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-shadow: 0 0 20px var(--neon-purple);
   /* animation: typewriter 4s steps(40) 1s both; */
 }
@@ -254,7 +248,7 @@ nav, .nav-container {
 .hero-description {
   font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   color: var(--text-secondary);
   max-width: 600px;
   margin-left: auto;
@@ -266,7 +260,7 @@ nav, .nav-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0.2rem;
 }
 
 .social-links a {
