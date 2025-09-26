@@ -11,7 +11,7 @@ This portfolio showcases my skills, projects, achievements, and ongoing work in 
 - 📂 **Projects Showcase:** Highlighting my best work — from Hospital Management Systems to Edge AI.
 - 📱 **Responsive Design:** Works across mobile, tablet, and desktop devices.
 - 📝 **Dynamic Sections:** Skills, Achievements, Contact, and Blog/Updates.
-- 🌐 **Deployed Version:** [View Live Portfolio](https://your-portfolio-link)
+- 🌐 **Deployed Version:** [View Live Portfolio](https://sarveshprince.github.io/portfolio/)
 
 ---
 
